@@ -1,7 +1,37 @@
 body {
-  font-family: Helvetica;
+  color: white;
+  background-color: black;
 }
+
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  .cities {
+    width: 30%;
+  }
+  .active-city {
+    position: fixed !important;
+    right: 0px;
+    width: 67%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 100%;
+    h3 {
+      margin-top: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
+
+.list-group-item {
+  background-color: transparent;
+  cursor: pointer;
+}
+
